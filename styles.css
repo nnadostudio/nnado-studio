@@ -49,7 +49,7 @@
 .case-deck{font:400 21px/1.45 var(--serif);max-width:550px;margin:70px 0 0 25%}
 .case-meta{position:absolute;right:4vw;bottom:72px;display:flex;gap:55px;margin:0;font:400 10px/1.55 var(--mono);text-transform:uppercase}
 .case-meta div{min-width:110px}.case-meta dt{font-weight:700;border-bottom:1px solid;margin-bottom:8px;padding-bottom:5px}.case-meta dd{margin:0}
-.case-wide{margin:0;background:#d9d0c9}.case-wide img{display:block;width:100%;height:auto}
+.case-wide{margin:0;background:#d9d0c9}.case-wide img{display:block;width:100%;height:auto}.choux-wash-showcase{display:grid;place-items:center;padding:clamp(20px,4vw,64px);background:#efe8dc}.choux-wash-showcase img{width:auto;max-width:100%;height:auto;max-height:90vh;object-fit:contain}
 .case-about{display:grid;grid-template-columns:43% 47%;justify-content:space-between;gap:6%;padding-top:100px;padding-bottom:110px;background:#f1d7df}
 .case-about .handwritten{margin:0 0 15px;color:#765b4c;transform:rotate(-3deg);width:max-content}
 .case-about h2,.process h2,.case-end h2{font-size:clamp(45px,5.8vw,84px);line-height:.84;text-transform:uppercase;letter-spacing:-.06em;margin:0}
