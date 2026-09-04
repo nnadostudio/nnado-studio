@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Demo client project portal for nnado studio.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f7f2e8">
+  <link rel="icon" href="assets/star-favicon.svg" type="image/svg+xml">
+  <title>Client Project Portal — nnado studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Manrope:wght@400;600;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260904-7">
+  <link rel="stylesheet" href="portal.css?v=20260904-1">
+</head>
+<body class="portal-page">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="portal-header section-pad">
+    <a class="brand" href="index.html" aria-label="nnado studio home"><span class="star">☆</span><span>nnado studio</span><small>Donna Graves / graphic design</small></a>
+    <p><span>Client project space</span><b>Demo / placeholder data</b></p>
+  </header>
+
+  <main id="portal" aria-live="polite">
+    <section class="portal-hero section-pad" aria-labelledby="portal-title">
+      <p class="eyebrow">Client project portal / <span data-project-year></span></p>
+      <h1 id="portal-title">Welcome back,<br><em data-client-name></em></h1>
+      <p class="portal-hero-note handwritten">your little project home ♡</p>
+      <div class="portal-identity">
+        <p><span data-project-name></span><small><span data-project-type></span> / <span data-project-year></span></small></p>
+        <dl>
+          <div><dt>Current phase</dt><dd data-current-phase></dd></div>
+          <div><dt>Next milestone</dt><dd data-next-milestone></dd></div>
+        </dl>
+      </div>
+      <span class="portal-star" aria-hidden="true">☆</span>
+    </section>
+
+    <section class="portal-action section-pad" id="action-needed" aria-labelledby="action-title"></section>
+
+    <section class="portal-timeline section-pad" aria-labelledby="timeline-title">
+      <header class="portal-section-heading"><div><p class="handwritten">where we are right now</p><h2 id="timeline-title">Project timeline</h2></div><p>One clear view of what’s finished, what I’m working on, and what comes next.</p></header>
+      <ol id="timeline-list"></ol>
+    </section>
+
+    <section class="portal-snapshot section-pad" aria-labelledby="snapshot-title">
+      <header class="portal-section-heading"><div><p class="handwritten">the quick version</p><h2 id="snapshot-title">Project snapshot</h2></div></header>
+      <dl id="snapshot-list"></dl>
+    </section>
+
+    <section class="portal-onboarding section-pad" aria-labelledby="onboarding-title">
+      <header class="portal-section-heading"><div><p class="handwritten">before the making begins</p><h2 id="onboarding-title">Onboarding</h2></div><p>Your starting materials, links, and project prep in one place.</p></header>
+      <div class="portal-rows" id="onboarding-list"></div>
+    </section>
+
+    <section class="portal-deliverables section-pad" aria-labelledby="deliverables-title">
+      <header class="portal-section-heading"><div><p class="handwritten">the good stuff</p><h2 id="deliverables-title">Your project includes</h2></div><p>Deliverable status updates as each part of your visual identity moves forward.</p></header>
+      <div class="deliverable-list" id="deliverables-list"></div>
+    </section>
+
+    <section class="portal-revisions section-pad" aria-labelledby="revisions-title">
+      <header class="portal-section-heading"><div><p class="handwritten">clear notes, clean revisions</p><h2 id="revisions-title">Revision rounds</h2></div><p id="revision-total"></p></header>
+      <div class="revision-list" id="revision-list"></div>
+      <p class="portal-helper">Keeping feedback in one place helps the project stay organized and keeps revisions clear.</p>
+    </section>
+
+    <section class="portal-payment section-pad" aria-labelledby="payment-title">
+      <header class="portal-section-heading"><div><p class="handwritten">the money part, simplified</p><h2 id="payment-title">Payment summary</h2></div><p>This is a project summary only. Payment is always handled through a secure external invoice provider.</p></header>
+      <dl class="payment-totals" id="payment-totals"></dl>
+      <div class="payment-milestones" id="payment-milestones"></div>
+      <div id="invoice-link"></div>
+    </section>
+
+    <section class="portal-meetings section-pad" aria-labelledby="meeting-title">
+      <header class="portal-section-heading"><div><p class="handwritten">see you soon-ish</p><h2 id="meeting-title">Next meeting</h2></div></header>
+      <div id="meeting-details"></div>
+    </section>
+
+    <section class="portal-resources section-pad" aria-labelledby="resources-title">
+      <header class="portal-section-heading"><div><p class="handwritten">everything in one spot</p><h2 id="resources-title">Project files + resources</h2></div><p>Important documents, presentations, shared folders, and final files will live here.</p></header>
+      <div class="portal-rows" id="resources-list"></div>
+    </section>
+
+    <section class="portal-next section-pad" aria-labelledby="next-title">
+      <p class="eyebrow">A plain-English project update</p>
+      <h2 id="next-title">What happens next?</h2>
+      <p id="next-copy"></p>
+      <aside id="donna-note"></aside>
+    </section>
+
+    <section class="portal-complete section-pad" id="completion-panel" aria-labelledby="completion-title" hidden></section>
+
+    <section class="portal-help section-pad" aria-labelledby="help-title">
+      <div><p class="handwritten">questions are allowed ♡</p><h2 id="help-title">Need something?</h2></div>
+      <div><p>If you have a project question, send me an email. If you have feedback on a design presentation, please use the feedback link above so everything stays together.</p><div class="portal-actions"><a class="button" href="mailto:nnadostudio@gmail.com">Email Donna →</a><span id="booking-link"></span></div></div>
+    </section>
+  </main>
+
+  <footer class="portal-footer section-pad"><a class="brand" href="index.html"><span class="star">☆</span><span>nnado studio</span><small>Independent graphic design</small></a><p>Private client data is not stored on this demo page.<br>© 2026 Donna Graves / nnado studio</p></footer>
+  <script src="portal-data.js"></script>
+  <script src="portal.js"></script>
+</body>
+</html>
