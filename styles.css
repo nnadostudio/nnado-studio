@@ -203,3 +203,9 @@ footer a:hover,.contact-socials a:hover,.direct-contact>a:hover{color:var(--hot)
 .plumeria-gallery{background:var(--plumeria-yellow)}.plumeria-gallery>figure:not(.gallery-wide){aspect-ratio:3/2}.plumeria-gallery img{object-position:center}
 .plumeria-case .case-end{background:var(--plumeria-pink)}.plumeria-case .case-end .handwritten{color:var(--plumeria-brown)}.plumeria-case .button{background:var(--plumeria-blue);box-shadow:5px 5px 0 var(--plumeria-brown)}.plumeria-case .ticker{background:var(--plumeria-yellow);color:var(--plumeria-brown)}
 @media(max-width:800px){.plumeria-case .case-hero h1{font-size:17vw}.plumeria-duo figure,.plumeria-gallery>figure:not(.gallery-wide){aspect-ratio:4/3}.plumeria-duo .duo-lower{margin-top:0}}
+
+
+/* Homepage Em Hill feature + Lacy West coming-soon note */
+.emhill-thumb{background:#27313e}.emhill-thumbnail{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.index-title .index-coming-soon{font:400 25px/1 var(--hand);text-transform:none;letter-spacing:.01em;color:var(--hot);margin:12px 0 0;transform:rotate(-3deg);width:max-content}
+@media(max-width:800px){.index-title .index-coming-soon{font-size:22px}}
