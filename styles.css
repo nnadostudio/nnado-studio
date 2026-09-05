@@ -187,3 +187,19 @@ footer a:hover,.contact-socials a:hover,.direct-contact>a:hover{color:var(--hot)
 .emhill-gallery{background:var(--emhill-orange)}.emhill-gallery .gallery-wide{aspect-ratio:16/9}.emhill-gallery>figure:not(.gallery-wide){aspect-ratio:3/2}.emhill-gallery img{object-position:center}
 .emhill-case .case-end{background:var(--emhill-paper)}.emhill-case .case-end .handwritten{color:#315fcf}.emhill-case .button{background:var(--emhill-blue);box-shadow:5px 5px 0 var(--emhill-graphite)}.emhill-case .ticker{background:var(--emhill-blue);color:var(--emhill-graphite)}
 @media(max-width:800px){.emhill-case .case-hero h1{font-size:22vw}.emhill-duo figure,.emhill-gallery>figure:not(.gallery-wide),.emhill-gallery .gallery-wide{aspect-ratio:4/3}.emhill-duo .duo-lower{margin-top:0}}
+
+
+/* Plumeria Lane case study */
+.plumeria-row .index-mark{background:#b8dce5;color:#4a2517;border-color:#4a2517;font:400 31px/1 var(--serif);border-radius:50%;transform:rotate(4deg)}
+.plumeria-case{--plumeria-blue:#b8dce5;--plumeria-yellow:#f1d98c;--plumeria-pink:#f2d6df;--plumeria-brown:#4a2517;--plumeria-cream:#fbf2e9}
+.plumeria-case .case-hero h1{font-size:clamp(70px,10vw,150px);color:var(--plumeria-brown)}
+.plumeria-case .case-hero h1 em{color:#78b8c7}
+.plumeria-case .case-kicker{color:#c88aa3}
+.plumeria-hero-image{background:var(--plumeria-blue)}.plumeria-hero-image img{max-height:1000px;object-fit:cover}
+.plumeria-case .case-about{background:var(--plumeria-pink)}
+.plumeria-case .case-about .handwritten,.plumeria-case .case-about h2 em,.plumeria-case .process h2 em,.plumeria-case .case-end h2 em{color:var(--plumeria-brown)}
+.plumeria-duo{background:var(--plumeria-blue)}.plumeria-duo figure{aspect-ratio:4/3}.plumeria-duo .duo-lower{margin-top:8vw}
+.plumeria-case .process{background:var(--plumeria-cream);color:var(--plumeria-brown)}.plumeria-case .process-list article>span{color:#c88aa3}
+.plumeria-gallery{background:var(--plumeria-yellow)}.plumeria-gallery>figure:not(.gallery-wide){aspect-ratio:3/2}.plumeria-gallery img{object-position:center}
+.plumeria-case .case-end{background:var(--plumeria-pink)}.plumeria-case .case-end .handwritten{color:var(--plumeria-brown)}.plumeria-case .button{background:var(--plumeria-blue);box-shadow:5px 5px 0 var(--plumeria-brown)}.plumeria-case .ticker{background:var(--plumeria-yellow);color:var(--plumeria-brown)}
+@media(max-width:800px){.plumeria-case .case-hero h1{font-size:17vw}.plumeria-duo figure,.plumeria-gallery>figure:not(.gallery-wide){aspect-ratio:4/3}.plumeria-duo .duo-lower{margin-top:0}}
