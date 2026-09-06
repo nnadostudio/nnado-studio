@@ -209,3 +209,6 @@ footer a:hover,.contact-socials a:hover,.direct-contact>a:hover{color:var(--hot)
 .prodigy-thumb{background:#e4dfcf}.prodigy-thumbnail{display:block;width:100%;height:100%;object-fit:cover;object-position:center 42%}
 .index-title .index-coming-soon{font:400 25px/1 var(--hand);text-transform:none;letter-spacing:.01em;color:var(--hot);margin:12px 0 0;transform:rotate(-3deg);width:max-content}
 @media(max-width:800px){.index-title .index-coming-soon{font-size:22px}}
+/* Search-friendly homepage introduction */
+.hero-seo{max-width:580px;margin:-12px 0 25px;font:400 16px/1.5 var(--serif)}
+@media(max-width:800px){.hero-seo{max-width:88%;margin:-8px 0 24px;font-size:15px}}
