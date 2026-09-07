@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f7f2e8">
+  <link rel="icon" href="assets/star-favicon.svg" type="image/svg+xml">
+  <title>404 — Lost? | nnado studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Manrope:wght@400;600;700;800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .skip-link{position:absolute;left:12px;top:-100px;z-index:999;background:#111;color:#fff;padding:12px 16px;font:700 12px Manrope,sans-serif;text-transform:uppercase}.skip-link:focus{top:12px}
+    a:focus-visible,button:focus-visible{outline:3px solid #111;outline-offset:4px}
+    .error-page{min-height:calc(100vh - 105px);display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,42%);align-items:center;gap:5vw;padding-top:3vh;padding-bottom:8vh;position:relative;overflow:hidden}
+    .error-copy{position:relative;z-index:2;padding-left:7%}
+    .error-code{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.12em;margin:0 0 16px}
+    .error-copy h1{font-size:clamp(68px,9vw,145px);line-height:.76;letter-spacing:-.08em;text-transform:uppercase;margin:0 0 30px;max-width:760px}
+    .error-copy h1 em{display:block;font:400 .68em/.9 var(--serif);text-transform:none;color:var(--hot);letter-spacing:-.045em;margin-left:8%}
+    .error-copy>p:not(.handwritten){font:400 17px/1.45 var(--serif);max-width:440px;margin:0 0 28px}
+    .error-actions{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .error-actions .button{display:inline-block;min-width:160px}
+    .error-actions .text-link{color:var(--black)}
+    .error-note{position:absolute;left:52%;top:14%;transform:rotate(-7deg);font-size:21px;z-index:3}
+    .error-note:after{content:"";display:block;width:86px;border-bottom:2px solid;margin:5px 0 0 18px}
+    .bunny-wrap{position:relative;display:grid;place-items:center;align-self:center;justify-self:center;width:min(100%,560px);transform:rotate(2deg)}
+    .bunny-card{position:relative;background:#fff;border:1px solid var(--black);padding:18px 18px 48px;box-shadow:10px 10px 0 var(--pink);width:min(88%,450px);transform:rotate(1.5deg)}
+    .bunny-card img{display:block;width:100%;height:auto;image-rendering:auto}
+    .bunny-caption{position:absolute;left:24px;bottom:13px;font:500 10px var(--mono);text-transform:uppercase;letter-spacing:.06em}
+    .bunny-star{position:absolute;right:-16px;top:-34px;color:var(--hot);font-size:62px;transform:rotate(14deg)}
+    .scribble{position:absolute;right:4%;bottom:8%;font:italic 20px var(--serif);color:var(--hot);transform:rotate(5deg)}
+    .error-page:before{content:"404";position:absolute;right:-3vw;bottom:-8vh;font:800 clamp(180px,29vw,470px)/.7 var(--sans);letter-spacing:-.12em;color:rgba(243,199,214,.26);z-index:0;pointer-events:none}
+    @media(max-width:800px){
+      .error-page{min-height:calc(100vh - 86px);grid-template-columns:1fr;gap:25px;padding-top:38px;padding-bottom:70px}
+      .error-copy{padding-left:0;text-align:center}
+      .error-copy h1{font-size:19vw;margin-left:auto;margin-right:auto}.error-copy h1 em{margin-left:0}
+      .error-copy>p:not(.handwritten){margin:0 auto 24px;max-width:330px;padding:0 8px}.error-actions{justify-content:center}
+      .error-note{position:static;margin:0 auto -8px;width:max-content;transform:rotate(-5deg)}
+      .bunny-wrap{width:min(94%,430px)}.bunny-card{width:82%;padding:13px 13px 42px;box-shadow:7px 7px 0 var(--pink)}
+      .bunny-star{font-size:48px;right:-10px;top:-28px}.scribble{right:20px;bottom:18px;font-size:16px}
+      .error-page:before{font-size:56vw;bottom:-2vh;right:-8vw}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="nnado studio home"><span class="star" aria-hidden="true">☆</span><span>nnado studio</span><small>Donna Graves / graphic design</small></a>
+    <button class="menu" aria-expanded="false" aria-controls="nav" aria-label="Open navigation menu">Menu</button>
+    <nav id="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="work.html">Works</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
+  </header>
+  <main id="main-content" class="error-page section-pad">
+    <section class="error-copy">
+      <p class="error-code">Error 404 / page not found</p>
+      <h1>Oops...<em>you wandered off :(</em></h1>
+      <p>Even the bunny doesn’t know how you got here. This page either moved, disappeared, or never existed in the first place.</p>
+      <div class="error-actions">
+        <a class="button" href="index.html">Take me home ★</a>
+        <a class="text-link" href="work.html">View my work <b aria-hidden="true">→</b></a>
+      </div>
+    </section>
+    <p class="error-note handwritten">wrong way babe →</p>
+    <figure class="bunny-wrap">
+      <div class="bunny-card">
+        <span class="bunny-star" aria-hidden="true">☆</span>
+        <img src="assets/404-bunny.png" width="240" height="240" alt="Cute bunny illustration">
+        <figcaption class="bunny-caption">nnado studio / lost &amp; found dept.</figcaption>
+      </div>
+    </figure>
+    <span class="scribble" aria-hidden="true">nothing to see here!</span>
+  </main>
+  <div class="ticker" aria-hidden="true"><div>WRONG TURN? IT HAPPENS　★　 WRONG TURN? IT HAPPENS　☆　 WRONG TURN? IT HAPPENS　★　 WRONG TURN? IT HAPPENS　☆　</div></div>
+  <script src="script.js"></script>
+</body>
+</html>
