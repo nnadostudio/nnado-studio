@@ -6,8 +6,15 @@ const inquiryForm=document.querySelector('#inquiry-form');
 if(inquiryForm){
   const submitButton=inquiryForm.querySelector('button[type="submit"]');
   const formStatus=inquiryForm.querySelector('#form-status');
+  const privacyConsent=inquiryForm.querySelector('input[name="privacy_consent"]');
   inquiryForm.addEventListener('submit',async event=>{
     event.preventDefault();
+    if(privacyConsent&&!privacyConsent.checked){
+      formStatus.textContent='Please agree to the Privacy Policy before submitting.';
+      formStatus.className='form-status is-error';
+      privacyConsent.focus();
+      return;
+    }
     if(!inquiryForm.reportValidity()){formStatus.textContent='Please complete the required fields above.';formStatus.className='form-status is-error';return}
     submitButton.disabled=true;
     submitButton.textContent='Sending…';
